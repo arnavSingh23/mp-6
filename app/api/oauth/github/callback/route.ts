@@ -73,6 +73,6 @@ export async function GET(req: NextRequest) {
         primary_email: primaryEmail ?? "",
     });
 
-    return Response.redirect(`/profile?${params.toString()}`, 302);
+    return Response.redirect(`https://mp-6-two-navy.vercel.app/profile?${params.toString()}`, 302);
 
 }
