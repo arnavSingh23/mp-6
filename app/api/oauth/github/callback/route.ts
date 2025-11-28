@@ -73,5 +73,6 @@ export async function GET(req: NextRequest) {
         primary_email: primaryEmail ?? "",
     });
 
-    return Response.redirect(`http://localhost:3000/profile?${params.toString()}`, 302);
+    return Response.redirect(`/profile?${params.toString()}`, 302);
+
 }
